@@ -99,6 +99,67 @@ footer{text-align:center;padding:24px 16px;color:#9fa8ae;font-size:.82rem;border
 @media(max-width:850px){.grid{grid-template-columns:repeat(2,1fr)}.card:last-child{grid-column:1/-1;min-height:140px}}
 @media(max-width:560px){.top{padding:12px 16px}.logo{font-size:.75rem}nav{gap:10px}nav a{font-size:.76rem}.hero{min-height:78svh;padding:28px 20px 34px;background-position:48% center}.actions{display:grid;grid-template-columns:1fr;max-width:300px}.btn{width:100%}section{padding:58px 18px}.grid{gap:10px}.card{min-height:155px;padding:16px 13px}.card h3{font-size:1.3rem}.card p{font-size:.82rem}.people-grid{grid-template-columns:1fr}.person{padding:20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.show-info {
+  background: #101923;
+  padding: 65px 5%;
+}
+
+.show-info-grid {
+  max-width: 1000px;
+  margin: 30px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.show-info-card {
+  padding: 26px 20px;
+  text-align: center;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: #ffffff08;
+}
+
+.info-icon {
+  font-size: 1.8rem;
+}
+
+.show-info-card h3 {
+  color: var(--gold);
+  margin: 12px 0 6px;
+}
+
+.show-info-card p {
+  color: var(--muted);
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .show-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .show-info-card {
+    padding: 22px 16px;
+  }
+}
+.maps-button {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 11px 18px;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+.maps-button:hover {
+  background: var(--gold);
+  color: #101923;
+}
 </style>
 </head>
 <body>
@@ -136,5 +197,41 @@ footer{text-align:center;padding:24px 16px;color:#9fa8ae;font-size:.82rem;border
 <article class="person"><h3>VÍNCULOS</h3><p>Destino</p></article><article class="person"><h3>ASISTENTES</h3><p>Otaño · Alaniz · Vivares</p></article>
 </div><p class="notice">Los nombres y las funciones se muestran según el cartel recibido. Revisarlos con la organización antes de publicar la versión definitiva.</p></section>
 <section class="cta" id="reflexion"><p class="eyebrow">Antes de que el tren parta</p><h2>Si tu vida fuera este tren… ¿en qué estación estás hoy?</h2><p>La vida es un viaje. Y cada elección puede cambiar el rumbo.</p><a class="btn" href="#inicio">Volver al comienzo</a></section>
+<section class="show-info" id="funcion">
+  <div class="head">
+    <p class="eyebrow">Información de la muestra</p>
+    <h2>El viaje está por comenzar</h2>
+    <p>Una historia sobre las decisiones que nos convierten en quienes somos.</p>
+  </div>
+
+  <div class="show-info-grid">
+    <article class="show-info-card">
+    <span class="info-icon">📍</span>
+    <h3>Lugar</h3>
+    <p>Espacio Cultural Julio Le Parc</p>
+
+    <a
+    class="maps-button"
+    href="https://maps.app.goo.gl/KZcDvT6B2AXGw1PFA"
+    target="_blank"
+    rel="noopener noreferrer"
+    >
+    Mira la ubicación ↗
+    </a>
+    </article>
+
+    <article class="show-info-card">
+      <span class="info-icon">📅</span>
+      <h3>Fecha</h3>
+      <p>Miércoles 21 de octubre de 2026</p>
+    </article>
+
+    <article class="show-info-card">
+      <span class="info-icon">🕡</span>
+      <h3>Horario</h3>
+      <p>18:30 h</p>
+    </article>
+  </div>
+</section>
 </main><footer><strong>HOY ELIJO — El tren de las decisiones</strong><br>Una historia sobre crecer, elegir y seguir adelante.</footer>
 </body></html>
