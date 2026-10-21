@@ -177,6 +177,66 @@ footer{text-align:center;padding:24px 16px;color:#9fa8ae;font-size:.82rem;border
   font-size: 0.95rem;
   letter-spacing: 0.5px;
 }
+.team-section {
+  padding: 70px 5%;
+  background: #0a1019;
+}
+.team-grid {
+  max-width: 1100px;
+  margin: 35px auto 0;
+  display: grid;
+  grid-template-columns: repeat(2,minmax(o, 1fr));
+  gap: 18px;
+}
+.team-card{
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: linear-gradient(145deg, #ffffff0a, #ffffff03);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-4px);
+  border-color:var(--gold);
+}
+.team-card h3 {
+  margin: 0 0 18px;
+  padding-bottom: 12px;
+  color: var(--gold);
+  border-bottom: 1px solid var(--line);
+  text-transform: capitalize;
+}
+.team-cardar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+.team-card li {
+  color: var(--muted);
+  margin-left: 5px;
+}
+.team-card li span {
+  color: #f7eddb;
+  margin-left: 5px;
+}
+@media (max-width: 600px) {
+  .team-section {
+    padding: 50px 5%
+  }
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .team-card {
+    padding: 20px;
+  }
+  .team-card:hover {
+    transform: none;
 </style>
 </head>
 <body>
